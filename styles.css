@@ -1,0 +1,337 @@
+@font-face {
+    font-family: 'pattayaregular';
+    src: url('pattaya-regular-webfont.woff2') format('woff2'),
+         url('pattaya-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dongle';
+  src: url('Dongle-Regular.woff2') format('woff2'),
+      url('Dongle-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+#donutimg1{
+  border-radius: 50%;
+}
+
+
+.column {
+  float: left;
+  text-align: center;
+  width: 25%;
+  padding: 5px;
+}
+
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #58deff;
+    height: 150px;
+}
+
+.header {
+    background-color: #58deff;
+  }
+  
+.header-left {
+    float: left;
+    font-family: 'pattayaregular', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    margin-top: 40px;
+    word-spacing: 10px;
+    text-align: center;
+    padding-left: 4%;
+    font-size: 30px;
+  }
+
+.header-right {
+    float: right;
+    margin-top: 40px;
+    font-size: 22px;
+    padding-right: 4%;
+  }
+  
+@media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    .header-right {
+        float: none;
+      }
+  }
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+.navbar li {
+    display: inline;
+  }
+
+.navbar{
+    font-family: 'pattayaregular', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+    font-size: 30px;
+    word-spacing: 10px;
+  }
+
+a:link {
+    color: #122b33;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+a:visited {
+    color: #122b33;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+.navbar a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+.h1text{
+  text-align: center;
+  font-family: 'pattayaregular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 26px;
+  color: #122b33;
+}
+
+.ptext1{
+  text-align: center;
+  font-family: 'Dongle', Arial, sans-serif;
+  font-size: 30px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.h2text1{
+  text-align: center;
+  font-family: 'pattayaregular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 22px;
+  color: #122b33;
+}
+
+.ptext2{
+  text-align: center;
+  font-family: 'Dongle', Arial, sans-serif;
+  font-size: 30px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+#donutp2{
+  border-radius: 50%;
+}
+
+.column2 {
+  float: left;
+  text-align: center;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.ptext3{
+  text-align: center;
+  font-family: 'Dongle', Arial, sans-serif;
+  font-size: 30px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.ptext4{
+  text-align: center;
+  font-family: 'Dongle', Arial, sans-serif;
+  font-size: 30px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.column3 {
+  float: left;
+  text-align: center;
+  width: 50%;
+  padding: 10px;
+}
+
+.column4 {
+  float: left;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 3%;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #58deff;
+  color: #122b33;
+  text-align: center;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Cake image-7.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  font-family: 'pattayaregular', Arial, sans-serif;
+  color: white;
+  position: relative;
+}
+
+#ptext5{
+  text-align: center;
+  font-family: 'Dongle', Arial, sans-serif;
+  font-size: 30px;
+}
+
+.hero-image2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/bakers special-1.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #37829b;
+  color: white;
+  padding: 6px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Dongle', Arial, sans-serif;
+  font-size: 27px;
+}
+
+input[type=reset] {
+  background-color: #37829b;
+  color: white;
+  padding: 6px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Dongle', Arial, sans-serif;
+  font-size: 27px;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #122b33;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  padding: 40px;
+  padding-bottom: 5%;
+}
+
+#firstname{
+  font-family: 'Dongle', Arial, sans-serif;
+  font-size: 30px;
+}
+
+#lastname{
+  font-family: 'Dongle', Arial, sans-serif;
+  font-size: 30px;
+}
+
+#postcode{
+  font-family: 'Dongle', Arial, sans-serif;
+  font-size: 30px;
+}
+
+#email{
+  font-family: 'Dongle', Arial, sans-serif;
+  font-size: 30px;
+}
+
+#emailtxt{
+  font-family: 'Dongle', Arial, sans-serif;
+  font-size: 30px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+#subject{
+  font-family: 'Dongle', Arial, sans-serif;
+  font-size: 30px;
+}
+
+.hero-image3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/Shoot 1-13.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}

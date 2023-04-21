@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<div id="vue-start">
+<body>
+    <header>
+        <div class="header-left">
+            <a href="index.html">{{logoText}}</a>
+        </div>
+       
+        <div class="header-right">
+            <div class="navbar">
+            <ul>
+                <li><a href="index.html">{{navText1}}</a></li>
+                <li><a href="about_us.html">{{navText2}}</a></li>
+                <li><a href="donuts.html">{{navText3}}</a></li>
+                <li><a href="wholesale.html">{{navText4}}</a></li>
+                <li><a href="contact_us.html">{{navText5}}</a></li>
+              </ul>
+              </div>
+        </div>
+    </header>
+
+    <div class="hero-image2">
+        <div class="hero-text">
+            <br><h1 style="font-size:64px">{{heroText}}</h1><br>
+        </div>
+      </div>
+
+      <div class="h1text">
+        <h1>{{h1Text}}</h1>
+      </div>
+
+      <div class="ptext4">
+        <p>{{p1Text}}</p>
+      </div>
+
+      <div class="ptext4">
+        <p>{{p2Text}}</p>
+      </div>
+
+      <div class="container">
+        <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+      
+          <label for="fname" id="firstname">{{fnameText}}</label>
+          <input type="text" id="firstname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname" id="lastname">{{lnameText}}</label>
+          <input type="text" id="lastname" name="lastname" placeholder="Your last name..">
+
+          <label for="email" id="email">{{emailText}}</label><br><br>
+          <input type="email" id="emailtxt" name="email" placeholder="Your email.."><br><br>
+      
+          <label for="subject" id="subject">{{sbjText}}</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Send">
+          <input type="reset" value="Reset">
+      
+        </form>
+      </div>
+
+
+<div class="footer">
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">{{navText1}}</a></li>
+            <li><a href="about_us.html">{{navText2}}</a></li>
+            <li><a href="donuts.html">{{navText3}}</a></li>
+            <li><a href="wholesale.html">{{navText4}}</a></li>
+            <li><a href="contact_us.html">{{navText5}}</a></li>
+          </ul>
+          </div>
+  </div>
+
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script>
+        new Vue({
+            el: "#vue-start",
+            data:{
+                logoText: "Doughnuts",
+                navText1: "Home",
+                navText2: "About",
+                navText3: "Donuts",
+                navText4: "Wholesale",
+                navText5: "Contact",
+                heroText: "Stock Our Stuff",
+                h1Text: "Wholesale Doughnuts",
+                p1Text: "We’ve already got a number of stockists outside of our stores – including coffee shops and eateries – so why not join the club? You can have our bright, bold and curvaceous buns to add to your store, offering your customers something extra when you bulk buy wholesale doughnuts.",
+                p2Text: "Whether you need bulk doughnuts or a regular wholesale doughnut supplier, chuck your details in our form and we’ll get back to you. We’re knee-deep in batter at the moment, but we’ll be in touch about the doughnuts wholesale process.",
+                fnameText: "First Name",
+                lnameText: "Last Name",
+                emailText: "Email",
+                sbjText: "Subject"
+
+            }
+        })
+    </script>
+
+</body>
+</html>

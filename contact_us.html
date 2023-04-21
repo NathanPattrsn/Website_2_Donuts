@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<div id="vue-start">
+<body>
+    <header>
+        <div class="header-left">
+            <a href="index.html">{{logoText}}</a>
+        </div>
+       
+        <div class="header-right">
+            <div class="navbar">
+            <ul>
+                <li><a href="index.html">{{navText1}}</a></li>
+                <li><a href="about_us.html">{{navText2}}</a></li>
+                <li><a href="donuts.html">{{navText3}}</a></li>
+                <li><a href="wholesale.html">{{navText4}}</a></li>
+                <li><a href="contact_us.html">{{navText5}}</a></li>
+              </ul>
+              </div>
+        </div>
+    </header>
+
+    <div class="hero-image3">
+        <div class="hero-text">
+            <br><h1 style="font-size:64px">{{heroText}}</h1><br>
+        </div>
+      </div>
+
+      <div class="h1text">
+        <h1>{{h1Text}}</h1>
+      </div>
+
+      <div class="ptext4">
+        <p>{{p1Text}}</p>
+      </div>
+
+      <div class="ptext4">
+        <p>{{p2Text}}</p>
+      </div>
+
+      <div class="container">
+        <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+      
+          <label for="fname" id="firstname">{{fnameText}}</label>
+          <input type="text" id="firstname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname" id="lastname">{{lnameText}}</label>
+          <input type="text" id="lastname" name="lastname" placeholder="Your last name..">
+
+          <label for="postcode" id="postcode">{{postcodeText}}</label>
+          <input type="text" id="postcode" name="postcode" placeholder="Your postcode..">
+
+          <label for="email" id="email">{{emailText}}</label><br><br>
+          <input type="email" id="emailtxt" name="email" placeholder="Your email.."><br><br>
+      
+          <label for="subject" id="subject">{{sbjText}}</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Send">
+          <input type="reset" value="Reset">
+      
+        </form>
+      </div>
+
+
+<div class="footer">
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">{{navText1}}</a></li>
+            <li><a href="about_us.html">{{navText2}}</a></li>
+            <li><a href="donuts.html">{{navText3}}</a></li>
+            <li><a href="wholesale.html">{{navText4}}</a></li>
+            <li><a href="contact_us.html">{{navText5}}</a></li>
+          </ul>
+          </div>
+  </div>
+
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script>
+        new Vue({
+            el: "#vue-start",
+            data:{
+                logoText: "Doughnuts",
+                navText1: "Home",
+                navText2: "About",
+                navText3: "Donuts",
+                navText4: "Wholesale",
+                navText5: "Contact",
+                heroText: "Doughnut Addiction Hotline",
+                h1Text: "Contact Us",
+                p1Text: "We’re pretty busy baking doughnuts – up to our eyeballs in cookie crumbs and caramel sauce – but you can always give us a call to find out more. ",
+                p2Text: "Simply check which store you want and pick up the phone to have a chat, or better yet, get in touch by filling in our form and we’ll get back to you. ",
+                p3Text: "Don’t forget to sign up to our mailing list for special offers, too!",
+                fnameText: "First Name",
+                lnameText: "Last Name",
+                postcodeText: "Postcode",
+                emailText: "Email",
+                sbjText: "Subject"
+
+            }
+        })
+    </script>
+
+</body>
+</html>
